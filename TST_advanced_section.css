@@ -6,6 +6,7 @@
   scrollbar-width: none;
 }
 
+
 /* Hide .twisty and adjust margins */
 tab-item .twisty {
   visibility: hidden;
@@ -30,30 +31,24 @@ tab-item:hover .closebox {
   visibility: inherit;
 }
 
-
 .newtab-action-selector-anchor {
-  border: none !important;
-  margin-right: 30px;
-  margin-top: 5px;
+  display: none !important;
 }
-
 
 .newtab-button-box {
   margin-left: 0px;
 }
 
 .newtab-button:hover {
-  background-color: rgb(82, 148, 226, 1) !important;
+  background-color: #07b1cf !important;
 }
 
 .newtab-button {
   border-bottom: none !important;
-  background: none !important;
-  display: none !important;
-  padding: 5px 5px !important;
+  background-color: var(--theme-colors-frame) !important;
+  padding: 7px 5px !important;
+  margin: 0 0 0 15px !important;
 }
-
-
 
 /* Hide sound playing/muted button. */
 .sound-button::before {
@@ -61,23 +56,20 @@ tab-item:hover .closebox {
 }
 
 /* ##### TAB COLORS ########################### */
-
 #tabbar {
   border-right: 1px solid #1d1d1d;
   box-shadow: none !important;
-  //background: #323234 !important; /*enabling this will override theme bg img and apply solid color only*/
+  /* background: #323234 !important; enabling this will override theme bg img and apply solid color only */
 }
 
 #background {
-
-  background-color: #111111 !important;
+  background-color: var(--theme-colors-frame) !important;
   /*change bg img color*/
-
 }
 
 tab-item {
   box-shadow: none !important;
-  background-color: rgba(100, 100, 100, 0.7) !important;
+  background-color: rgb(35, 49, 67) !important;
   border: none;
   --tab-margin-left: 21px;
   --tab-margin-top: 4px;
@@ -111,6 +103,7 @@ tab-item .favicon {
   margin: 8px;
 }
 
+
 /* Adjust style for tab that has sound playing. */
 tab-item.sound-playing .favicon::after {
   content: '';
@@ -123,6 +116,7 @@ tab-item.sound-playing .favicon::after {
   z-index: -1;
   opacity: 0;
 }
+
 
 /* Adjust style for tab that is muted. */
 tab-item.muted {
@@ -168,3 +162,4 @@ tab-item.muted {
 .tab.unread .label-content {
   font-style: italic !important;
 }
+
